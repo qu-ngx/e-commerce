@@ -7,8 +7,10 @@ import org.springframework.stereotype.Service;
 public class CustomerService {
 
     private final CustomerRepository repository;
+    private final CustomerMapper mapper;
 
     public String createCustomer(CustomerRequest request) {
-        return null;
-    }
+        var customer = repository.save(mapper.toCustomer(request));
+        return customer.getId();
+   }
 }
