@@ -1,5 +1,6 @@
 package com.qungx.ecommerce.product;
 
+import com.qungx.ecommerce.category.Category;
 import jakarta.persistence.*;
 import lombok.*;
 
