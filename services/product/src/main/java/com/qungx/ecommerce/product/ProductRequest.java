@@ -1,4 +1,6 @@
 package com.qungx.ecommerce.product;
 
-public class ProductRequest {
+public record ProductRequest (
+
+) {
 }
